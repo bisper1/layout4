@@ -4,81 +4,55 @@
     box-sizing: border-box;
 }
 
-header {
-    padding: 15px;
+form { text-align: center; }
+form > div {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    margin: 10px;
+    padding: 20px;
+    background-color: lightgrey;
 }
 
-header h2 {
-    font-weight: normal;
-    font-size: 28px;
+.input-line > div {
+    float: left;
+    font-size: 32px;
+    padding: 10px;
 }
 
-main::after {
+.input-line .input-icon {
+    width: 50px;
+}
+
+.input-line .input-text {
+    overflow: hidden;
+    width: 96%;
+}
+
+.input-line i {
+    color: #2196F3;
+}
+.input-line input {
+    font-size: 24px;
+    width: 100%;
+    padding: 8px;
+    display: block;
+}
+
+.input-line::after {
     content: "";
     display: block;
     clear: both;
 }
 
-article {
-    border: 1px solid lightgrey;
-    text-align: center;
-    width: 32%;
-    float: left;
-    margin: 0 10px;
+h1 {
+    color: #2196F3;
+    font-weight: 400;
 }
 
-article div {
-    padding: 20px 5px;
-    /* border: 1px solid gray;
-    border-top: none; */
-    border-bottom: 1px solid gray;
-    border-left: 1px solid gray;
-    border-right: 1px solid gray;
-}
-
-article div > h2 {
-    margin: 20px 0px;
-    font-weight: normal;
-}
-
-article .card-title1 {
-    background-color: black;
+button {
     color: white;
-}
-
-article .card-title2 {
-    background-color: rgba(0, 255, 0, 0.8);
-    color: white;
-}
-
-article .card-price p {
-    color: gray;
-}
-
-article .card-footer {
-    background-color: lightgrey;
-}
-
-article button {
-    width: 150px;
+    background-color: #2196F3;
+    font-size: 1.3em;
+    width: 100px;
     height: 50px;
-    color: white;
-    background-color: rgba(0, 255, 0, 0.8);
     border: none;
-    font-size: 16px;
-}
-
-article button:hover {
-    cursor: pointer;
-    background-color: gray;
-    color: black;
-}
-
-article button:focus {
-    /* border 외부 라인 */
-    outline: none;
-}
-
-article:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
